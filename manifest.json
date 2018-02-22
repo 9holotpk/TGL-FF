@@ -1,0 +1,35 @@
+{ 
+  "applications": {
+    "gecko": {
+      "id": "TelegramLaunch@9holotpk",
+      "strict_min_version": "51.0"
+    }
+  },
+  
+  "browser_action": {
+    "default_icon": "icons/telegram_128.png", 
+    "default_title": "Telegram Launch"
+  }, 
+  "description": "Fast Launcher for Telegram Web", 
+  "icons": {
+    "128": "icons/telegram_128.png", 
+    "64": "icons/telegram_64.png", 
+    "32": "icons/telegram_32.png"
+  }, 
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }, 
+  "name": "Telegram Launch", 
+  "version": "1.1", 
+  "manifest_version": 2, 
+  "permissions": [
+    "tabs", 
+    "https://web.telegram.org/"
+  ], 
+  "developer": {
+    "url": "http://twitter.com/9holotpk", 
+    "name": "Sontaya T. Wichakot"
+  }
+}
