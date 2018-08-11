@@ -21,12 +21,20 @@
       "background.js"
     ]
   }, 
+  "content_scripts": [
+    {
+      "matches": ["https://web.telegram.org/*"],
+      "run_at": "document_end",
+      "js": ["contentScript.js"]
+    }
+  ],
   "name": "Telegram Launch", 
-  "version": "1.1", 
+  "version": "2.0", 
   "manifest_version": 2, 
   "permissions": [
     "tabs", 
-    "https://web.telegram.org/"
+    "https://web.telegram.org/",
+    "activeTab"
   ], 
   "developer": {
     "url": "http://twitter.com/9holotpk", 
